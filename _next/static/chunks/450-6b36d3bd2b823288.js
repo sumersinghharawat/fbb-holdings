@@ -404,6 +404,7 @@
                 q = a.n(e),
                 r = function (d) {
                     var f = d.title,
+                        w = d.subtitle,
                         r = d.button,
                         e = d.items,
                         b = (0, j.aB)();
@@ -433,50 +434,75 @@
                             (0, g.jsxs)("div", {
                                 className: q().Header,
                                 children: [
-                                    (0, g.jsx)(i.x, { children: f && (0, g.jsx)("h2", { ref: a.title, className: l()(i.s.h3, q().Title, p().Trigger_Right, c.title && p().Triggered), children: f }) }),
-                                    b.width >= 1024 && (0, g.jsx)("div", { ref: a.button, className: l()(p().Trigger_Left, c.button && p().Triggered), children: r }),
+                                    // b.width >= 1024 && (0, g.jsx)("div",
+                                    // {
+                                    //     className: q().OurBrands__item,
+                                    //     children: (0, r.jsx)(q(), {
+                                    //         alt: a.image.alt || a.title || "",
+                                    //         loading: "eager",
+                                    //         width: a.image.width,
+                                    //         height: a.image.height,
+                                    //         className: q().OurBrands__image,
+                                    //         unoptimized: !0,
+                                    //         src: a.image.permalink,
+                                    //     }),
+                                    // }),
+                                    
+                                    (0, g.jsxs)("div", {
+                                        className: q().Card,
+                                        children: [
+                                            // (0, g.jsxs)("div", {
+                                            //     className: q().Card,
+                                            //     children: (0, g.jsx)(q(), { unoptimized: !0, layout: "fill", objectPosition: "center", objectFit: "cover", src: a.image ? a.image.permalink : "none", alt: (null === (c = a.image) || void 0 === c ? void 0 : c.alt) || "", loading: "eager" })
+                                            // }),
+                                            (0, g.jsx)("p", { className: l()(i.s.h5 + d.subtitle), children: d.subtitle }),
+                                            (0, g.jsx)(i.x, { children: f && (0, g.jsx)("h2", { ref: a.title, className: l()(i.s.h3, q().Title, p().Trigger_Right, c.title && p().Triggered), children: f }) }),
+                                        ]}),
+                                        b.width >= 1024 && (0, g.jsx)("div", { ref: a.button, className: l()(p().Trigger_Left, c.button && p().Triggered), children: r }),
+                                        console.log(w)
                                 ],
                             }),
-                            (0, g.jsxs)("div", {
-                                ref: a.posts,
-                                className: l()(q().Items, p().Trigger_Top, c.posts && p().Triggered),
-                                children: [
-                                    b.width >= 1024 && e,
-                                    b.width < 1024 &&
-                                        (0, g.jsx)(o.t, {
-                                            onSwiper: u,
-                                            slidesPerView: 1,
-                                            className: q().Swiper,
-                                            lazy: { loadPrevNext: !0 },
-                                            spaceBetween: 0,
-                                            loop: !0,
-                                            children: e.map(function (a) {
-                                                return (0, g.jsx)(o.o, { className: l()(q().SwiperSlide), children: a }, a.key);
-                                            }),
-                                        }),
-                                    b.width < 1024 &&
-                                        e.length > 1 &&
-                                        (0, g.jsxs)("div", {
-                                            className: q().SliderControls,
-                                            children: [
-                                                (0, g.jsx)("button", {
-                                                    ref: v,
-                                                    "aria-label": "Previous preview.",
-                                                    onClick: x,
-                                                    className: l()(q().SliderControl, q().SliderControl_Left),
-                                                    children: (0, g.jsx)(h.CC, { className: q().SliderControl__Icon, type: "arrow" }),
-                                                }),
-                                                (0, g.jsx)("button", {
-                                                    ref: w,
-                                                    "aria-label": "Next preview.",
-                                                    onClick: y,
-                                                    className: l()(q().SliderControl, q().SliderControl_Right),
-                                                    children: (0, g.jsx)(h.CC, { className: q().SliderControl__Icon, type: "arrow" }),
-                                                }),
-                                            ],
-                                        }),
-                                ],
-                            }),
+                            
+                            // (0, g.jsxs)("div", {
+                            //     ref: a.posts,
+                            //     className: l()(q().Items, p().Trigger_Top, c.posts && p().Triggered),
+                            //     children: [
+                            //         b.width >= 1024 && e,
+                            //         b.width < 1024 &&
+                            //             (0, g.jsx)(o.t, {
+                            //                 onSwiper: u,
+                            //                 slidesPerView: 1,
+                            //                 className: q().Swiper,
+                            //                 lazy: { loadPrevNext: !0 },
+                            //                 spaceBetween: 0,
+                            //                 loop: !0,
+                            //                 children: e.map(function (a) {
+                            //                     return (0, g.jsx)(o.o, { className: l()(q().SwiperSlide), children: a }, a.key);
+                            //                 }),
+                            //             }),
+                            //         b.width < 1024 &&
+                            //             e.length > 1 &&
+                            //             (0, g.jsxs)("div", {
+                            //                 className: q().SliderControls,
+                            //                 children: [
+                            //                     (0, g.jsx)("button", {
+                            //                         ref: v,
+                            //                         "aria-label": "Previous preview.",
+                            //                         onClick: x,
+                            //                         className: l()(q().SliderControl, q().SliderControl_Left),
+                            //                         children: (0, g.jsx)(h.CC, { className: q().SliderControl__Icon, type: "arrow" }),
+                            //                     }),
+                            //                     (0, g.jsx)("button", {
+                            //                         ref: w,
+                            //                         "aria-label": "Next preview.",
+                            //                         onClick: y,
+                            //                         className: l()(q().SliderControl, q().SliderControl_Right),
+                            //                         children: (0, g.jsx)(h.CC, { className: q().SliderControl__Icon, type: "arrow" }),
+                            //                     }),
+                            //                 ],
+                            //             }),
+                            //     ],
+                            // }),
                             b.width < 1024 && (0, g.jsx)("div", { ref: a.button, className: l()(q().Button, p().Trigger_Top, c.button && p().Triggered), children: r }),
                         ],
                     });
@@ -891,7 +917,7 @@
                                                 className: s()(C().h2, L().Title, i && K().Title_Triggered),
                                                 children: [
                                                     (0, r.jsx)("span", { className: K().Title__Line, children: "FBB Family of Businesses" }),
-                                                    (0, r.jsxs)("span", { className: K().Title__Line, children: [(0, r.jsx)("span", { className: s()(K().Title__UnderlineText, L().Title__UnderlineText), }),] }),
+                                                    (0, r.jsxs)("span", { className: K().Title__Line, children: [(0, r.jsx)("span", { className: s()(K().Title__UnderlineText, L().Title__UnderlineText) })] }),
                                                 ],
                                             }),
                                             (0, r.jsx)("p", { ref: d, className: s()(C().p, L().Subtitle, j && L().Subtitle_Triggered), children: a.businesses_subtitle }),
@@ -1164,7 +1190,7 @@
                                                 className: K().Title__Line,
                                                 children: ["About Us", " ", (0, r.jsx)("br", {})],
                                             }),
-                                            (0, r.jsx)("span", { className: s()(Z()["Title\u0421areer"], K().Title__Line)}),
+                                            (0, r.jsx)("span", { className: s()(Z()["Title\u0421areer"], K().Title__Line) }),
                                         ],
                                     }),
                                     (0, r.jsx)(Y.B, {
@@ -1295,14 +1321,15 @@
                                                             (0, r.jsx)("div", {
                                                                 ref: d,
                                                                 className: ad().Numbers,
+                                                                // a.number
+                                                                //         ? (0, r.jsx)(
+                                                                //               ac.M,
+                                                                //               { className: ad().Number, captionClassName: ad().Number__Caption, value: a.number, caption: a.description || "", triggered: y },
+                                                                //               a.number + a.description + b
+                                                                //           )
                                                                 children: a.cares_numbers.map(function (a, b) {
-                                                                    return a.number
-                                                                        ? (0, r.jsx)(
-                                                                              ac.M,
-                                                                              { className: ad().Number, captionClassName: ad().Number__Caption, value: a.number, caption: a.description || "", triggered: y },
-                                                                              a.number + a.description + b
-                                                                          )
-                                                                        : null;
+                                                                    return (0,
+                                                                    r.jsx)(J(), { href: a.website_url || "#", passHref: !1, children: (0, r.jsxs)("a", { target: "_blank", rel: "noreferrer", className: L().Card, children: ["", (0, r.jsxs)("div", { className: L().Card__Text, children: [a.number && (0, r.jsx)("h3", { className: L().number, dangerouslySetInnerHTML: { __html: a.number } }), a.description && (0, r.jsx)("p", { className: L().Card__TextDescription, children: a.description }), (0, r.jsx)("div", { className: L().Card__TextUnderline, style: { backgroundColor: a.color || "#ffffff" } })] }), (0, r.jsx)("div", { className: L().Card__Overflow, style: { backgroundColor: a.color || "#ffffff" }, children: (0, r.jsx)("div", { className: L().Card__ImgContainer, children: a.image_hover && (0, r.jsx)(t(), { className: L().Card__Img, width: a.image_hover.width / 2, height: a.image_hover.height / 2, loading: "eager", layout: "intrinsic", src: a.image_hover.permalink, alt: a.image_hover.alt || "", unoptimized: !0 }) }) })] }) }, b);
                                                                 }),
                                                             }),
                                                     ],
@@ -1353,8 +1380,10 @@
                         className: ag().Wrapper,
                         children: (0, r.jsx)(H.W, {
                             children: (0, r.jsx)(ah.V, {
-                                title: "Recent stories",
-                                button: (0, r.jsx)(x.z, { href: "/newsroom", type: "gray-default", outer: !0, className: ag().Button, children: "Visit Our Newsroom" }),
+                                title: "Feel Free to Contact Us!",
+                                subtitle: "Contact",
+                                image: "/assets/footer-contact-image.jpg",
+                                button: (0, r.jsx)(x.z, { href: "/newsroom", type: "gray-default", outer: !0, className: ag().Button, children: "Contact Us Now" }),
                                 items: c.slice(0, 3).map(function (a) {
                                     return (0, r.jsx)(
                                         ai.eB,
