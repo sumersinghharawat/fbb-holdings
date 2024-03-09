@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'mohammad_bold_art_1regular';
+    src: url('../fonts/mohammad_bold_art_1_regular-webfont.woff2') format('woff2'),
+         url('../fonts/mohammad_bold_art_1_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.slide-content h2,
+.about-us-title h2,
+#our-mission h2,
+.business-header h2,
+#our-globe h2,
+.our-partners h2,
+.team-header h2,
+.corporate-social-header h2,
+.business-portfolio-title h2,
+.business-iframe-location h2,
+#contact-us h2 {
+    font-family: 'mohammad_bold_art_1regular';
+}

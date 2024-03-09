@@ -1,0 +1,186 @@
+@media (max-width: 768px) {
+    .loading-panel {
+        .countnumber{
+            height: 46px;
+            font-family: 'Cardinal Fruit';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 42px;
+            line-height: 46px;
+            text-align: end;
+            color: #F2F0ED;
+        }
+        .loader-progress{
+            width: 0%;
+            height: 1px;
+            background-color: #F2F0ED;
+        }
+    }
+    #loader .logo img {
+        width: 300px;
+    }
+
+    .website-logo {
+        width: 80px;
+    }
+
+    .sticky {
+        transition: 0.5s;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        background: rgb(1 44 47 / 80%);
+        z-index: 9997;
+        .website-logo {
+            width: 60px;
+            transition: 0.5s;
+        }
+    }
+    .slide-content{
+        h2{
+            font-size: 32px;
+            line-height: 36px;
+        }
+    }
+    #who-we-are {
+        height: 95vh;
+    }
+    #who-we-are p{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    #who-we-are h2{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    #who-we-are .row {
+        padding-bottom: 0vh !important;
+    }
+    #who-we-are:after {
+        bottom: 0px;
+        left: 0px;
+        background-position: bottom !important;
+    }
+    #about-us {
+        width: 100vw;
+        overflow: hidden;
+    }
+    .about-us-description{
+        h4{
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+    .about-us-title{
+        h2{
+            font-size: 32px;
+            line-height: 36px;
+        }
+    }
+    .about-us-heading{
+        font-size: 32px;
+        line-height: 38px;
+        padding: 0px;
+    }
+    .about-us-paragraph{
+        padding: 0px;
+    }
+    #our-mission{
+        .sub-heading{
+            font-size: 16px;
+            line-height: 180%;
+        }
+        h2{
+            font-size: 32px;
+            line-height: 36px;
+        }
+        .our-mission-image{
+            margin: 0px;
+        }
+    }
+    .business-header{
+        h2{
+            font-size: 32px;
+            line-height: 36px;
+        }
+        p{
+            width: 100%;
+        }
+    }
+    .carousel-inner:before{
+        width: 100% !important;
+    }
+    .navbar-toggler {
+        color: #fff !important;
+        outline: none;
+        border: none;
+    }
+    .navbar-toggler .navbar-toggler-icon {
+        filter: invert(1);
+        border: none;
+    }
+    #navbarSupportedContent {
+        background: #0009;
+        width: 106%;
+        position: absolute;
+        top: 80px;
+        left: -10px;
+        padding: 16px;
+    }
+    .navbar-toggler:focus{
+        box-shadow: none;
+    }
+    header .navbar-expand-lg .navbar-nav button{
+        padding: 14px 50px 14px 20px;
+    }
+    .business-portfolio-box{
+        height: 400px;
+        background-size: cover;
+        transition: 0.5s;
+    }
+    .business-portfolio-box:hover{
+        background-size: 150%;
+    }
+    .business-portfolio-title h2, .business-iframe-location h2 {
+        font-size: 36px !important;
+        line-height: 40px !important;
+    }
+
+    .single-business-portfolio {
+        background-size: 200%;
+    }
+
+    .business-portfolio-description p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    #contact-us {
+        padding-top: 120px;
+        height: auto;
+    }
+
+    #our-globe{
+        h2{
+            font-size: 32px;
+            line-height: 36px;
+            width: 220px;
+            margin: auto;
+        }
+        .globe-map {
+            height: 300px;
+            background-image: url(../img/globe-bg.png);
+            background-size: cover;
+            background-position: center;
+            margin: 50px 0px;
+        }
+    }
+    li.langtranslator{
+        margin: 0px;
+    }
+
+}
+.slide {
+    flex: 1;
+    width: calc(100%);
+    height: 100vh;
+}
